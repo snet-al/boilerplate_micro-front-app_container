@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        h1 {
+            margin: 0 0 20px 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Micro App</h1>
+    <p>Welcome to the Micro App! This is where the micro application content will go.</p>
+    <button id="send-message">Send Message to Parent</button>
+
+    <script>
+        document.getElementById('send-message').addEventListener('click', function () {
+            window.parent.postMessage('Message from Micro App', '*');
+        });
+    </script>
+</body>
+
+</html>
