@@ -109,11 +109,6 @@
      font-size: 15px;
  }
 
- .assistant-sidebar {
-     right: -200px;
-     display: none;
- }
-
  .content {
      margin-left: 110px;
      width: calc(100% - 200px);

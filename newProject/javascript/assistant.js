@@ -18,9 +18,11 @@ if (userInput.value.trim() !== "") {
         botMessage.className = 'chat-message bot-message';
         botMessage.textContent = 'This is an automated response.';
         chatBox.appendChild(botMessage);
-        
-        // Scroll down to the latest message
+
+    // Scroll down to the latest message 
         chatBox.scrollTop = chatBox.scrollHeight;
     }, 500);
 }
-}
+}   
+
+

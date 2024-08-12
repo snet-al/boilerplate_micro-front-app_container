@@ -27,6 +27,7 @@ header {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+
 }
 
 .chat-box {
@@ -61,7 +62,7 @@ header {
     margin-bottom: 20px;
     border: 1px solid rgb(217, 217, 217);
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .user-message {

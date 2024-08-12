@@ -17,16 +17,20 @@
 
  // Event listeners for sidebar links
  document.getElementById('apps').addEventListener('click', function() {
-     alert('Apps section is not available in the iframe.');
+    document.getElementById('iframe-container').src = 'apps.html'; 
  });
- 
+  
  document.getElementById('main-app').addEventListener('click', function() {
      document.getElementById('iframe-container').src = 'main-app.html';
  });
- 
+
  document.getElementById('micro-app').addEventListener('click', function() {
      document.getElementById('iframe-container').src = 'micro-app.html';
  });
+
+ document.getElementById('assitant').addEventListener('click', function() {
+    document.getElementById('iframe-container').src = 'assitant.html';
+});
 
  // Event listener for messages from iframe
  window.addEventListener('message', function(event) {
